@@ -9,6 +9,7 @@ uniform sampler2D u_earth;
 uniform sampler2D u_landCoast;   // R=land G=coast
 uniform sampler2D u_geoPack;     // R=cid/255 G=cont B=border A=cont_border (NEAREST for ids)
 uniform sampler2D u_mockS3;      // R=height G=glowType(0/1/2/3) NEAREST
+uniform sampler2D u_border;       // soft border field LINEAR
 
 uniform vec2 u_res;
 uniform float u_yaw;             // radians
@@ -88,8 +89,7 @@ vec2 sampleLandCoast(vec2 uv) {
   return vec2(t.r, t.g);
 }
 float sampleBorder(vec2 uv) {
-  // geo_pack B channel — use dedicated linear-friendly sample from geoPack
-  return texture(u_geoPack, uv).b;
+  return texture(u_border, uv).r;
 }
 float sampleCid(vec2 uv) {
   // nearest-ish: texels are exact ids/255

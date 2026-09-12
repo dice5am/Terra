@@ -42,7 +42,7 @@ export class TerraGlobe {
 
     this.u = {};
     for (const name of [
-      'u_earth','u_landCoast','u_geoPack','u_mockS3','u_res','u_yaw','u_pitch','u_zoom',
+      'u_earth','u_landCoast','u_geoPack','u_mockS3','u_border','u_res','u_yaw','u_pitch','u_zoom',
       'u_mode','u_extrudeScale','u_maxHeight','u_stage','u_globeCenter','u_globeRadiusPx'
     ]) {
       this.u[name] = gl.getUniformLocation(this.program, name);
@@ -53,11 +53,13 @@ export class TerraGlobe {
     this.texLand = await this._loadTex('assets/land_coast.png', gl.LINEAR, gl.LINEAR, false);
     this.texGeo = await this._loadTex('assets/geo_pack.png', gl.NEAREST, gl.NEAREST, false);
     this.texMock = await this._loadTex('assets/mock_s3_height_glow.png', gl.NEAREST, gl.NEAREST, false);
+    this.texBorder = await this._loadTex('assets/border.png', gl.LINEAR, gl.LINEAR, false);
 
     gl.uniform1i(this.u.u_earth, 0);
     gl.uniform1i(this.u.u_landCoast, 1);
     gl.uniform1i(this.u.u_geoPack, 2);
     gl.uniform1i(this.u.u_mockS3, 3);
+    gl.uniform1i(this.u.u_border, 4);
     gl.uniform1f(this.u.u_extrudeScale, EXTRUDE);
     gl.uniform1f(this.u.u_maxHeight, MAX_H);
     gl.uniform3fv(this.u.u_stage, STAGE);
@@ -190,6 +192,7 @@ export class TerraGlobe {
     gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, this.texLand);
     gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D, this.texGeo);
     gl.activeTexture(gl.TEXTURE3); gl.bindTexture(gl.TEXTURE_2D, this.texMock);
+    gl.activeTexture(gl.TEXTURE4); gl.bindTexture(gl.TEXTURE_2D, this.texBorder);
 
     const w = this.canvas.width, h = this.canvas.height;
     gl.uniform2f(this.u.u_res, w, h);
