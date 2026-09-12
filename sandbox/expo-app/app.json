@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "TERRA UI-2.5",
+    "slug": "terra-ui25-sandbox",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f5f2ed"
+    },
+    "android": {
+      "package": "earth.terra.ui25.sandbox",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#f5f2ed"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "earth.terra.ui25.sandbox",
+      "supportsTablet": false
+    },
+    "plugins": [],
+    "assetBundlePatterns": ["**/*"]
+  }
+}

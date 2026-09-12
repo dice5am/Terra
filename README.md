@@ -8,3 +8,7 @@ Delivery = thinnest Expo/WebView shell that yields an Android APK; same globe is
 MVP: S0 → S1 → S3 → S5. MOCK data only — never real demographics.
 
 Lock pack in `lock/`. Geo textures in `assets/`.
+
+## UI-2.5 sandbox
+
+Interactive WebGL2 C3 Soft Hollow craft lives in [`sandbox/`](./sandbox/). See `sandbox/README.md`.

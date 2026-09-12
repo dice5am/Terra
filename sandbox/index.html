@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>TERRA UI-2.5 · C3 Soft Hollow · MOCK</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body data-platform="ios">
+  <div id="stage">
+    <div id="phone" class="phone ios">
+      <div class="statusbar" id="statusbar">
+        <span class="time">9:41</span>
+        <div class="island" aria-hidden="true"></div>
+        <div class="trailing ios-trailing" aria-hidden="true">
+          <span class="sig"></span><span class="wifi"></span><span class="bat"></span>
+        </div>
+        <div class="trailing android-trailing" aria-hidden="true">
+          <span class="abars"></span><span class="awifi"></span><span class="abat"></span>
+        </div>
+      </div>
+      <div class="caption-bar">
+        <div class="mock-pill">EXAMPLE / MOCK DATA — not real demographics</div>
+        <div class="cap-title">TERRA · Phase UI-2 · C3 Soft Hollow + data-on-globe</div>
+        <div class="cap-sub" id="capSub">S1 Country lines · FRONT · faint theme-matched borders · default · IOS</div>
+      </div>
+      <canvas id="globe"></canvas>
+      <div class="home-indicator" id="homeInd"></div>
+      <div class="switcher" id="switcher" role="tablist">
+        <button data-mode="S0" type="button">S0</button>
+        <button data-mode="S1" class="active" type="button">S1</button>
+        <button data-mode="S3" type="button">S3</button>
+        <button data-mode="S5" type="button">S5</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

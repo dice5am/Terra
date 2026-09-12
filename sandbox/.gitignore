@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+expo-app/node_modules/
+expo-app/.expo/
+expo-app/android/
+expo-app/ios/
+*.log
+.DS_Store
