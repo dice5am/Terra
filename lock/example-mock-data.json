@@ -1,0 +1,281 @@
+{
+  "disclaimer": "EXAMPLE / MOCK \u2014 not real demographics. Do not cite, ship, or imply as truth.",
+  "source": {
+    "legend": "/workspace/terra/phase-ui-2/docs/mock-data-legend.md",
+    "renderer": "/workspace/terra/phase-ui-2/assets/render_terra_ui2.py",
+    "geo_meta": "/workspace/terra/phase-ui-2/assets/src/geo_meta.json"
+  },
+  "glow_types": {
+    "A": {
+      "name": "EXAMPLE Activity Index",
+      "rgb": [
+        0.25,
+        0.85,
+        0.95
+      ],
+      "feel": "cyan / teal"
+    },
+    "B": {
+      "name": "EXAMPLE Flow Volume",
+      "rgb": [
+        1.0,
+        0.55,
+        0.28
+      ],
+      "feel": "amber / coral"
+    },
+    "C": {
+      "name": "EXAMPLE Density Signal",
+      "rgb": [
+        0.72,
+        0.42,
+        1.0
+      ],
+      "feel": "violet",
+      "mvp": false
+    }
+  },
+  "height_tiers": [
+    {
+      "min": 0.3,
+      "max": 0.45,
+      "feel": "slight crystal lift"
+    },
+    {
+      "min": 0.45,
+      "max": 0.65,
+      "feel": "clear island extrusion"
+    },
+    {
+      "min": 0.65,
+      "max": 0.9,
+      "feel": "tallest islands \u2014 still sleek glass, not bars"
+    }
+  ],
+  "extrude_scale_board": 0.085,
+  "sets": {
+    "S3": {
+      "mvp": true,
+      "note": "Sparse hero set \u2014 7 islands, glow A+B only. MVP sandbox loads this set.",
+      "items": [
+        {
+          "country_id": 5,
+          "name": "United States of America",
+          "iso": "USA",
+          "height": 0.72,
+          "glow": "A"
+        },
+        {
+          "country_id": 29,
+          "name": "Brazil",
+          "iso": "BRA",
+          "height": 0.58,
+          "glow": "B"
+        },
+        {
+          "country_id": 121,
+          "name": "Germany",
+          "iso": "DEU",
+          "height": 0.48,
+          "glow": "A"
+        },
+        {
+          "country_id": 98,
+          "name": "India",
+          "iso": "IND",
+          "height": 0.8,
+          "glow": "B"
+        },
+        {
+          "country_id": 155,
+          "name": "Japan",
+          "iso": "JPN",
+          "height": 0.55,
+          "glow": "A"
+        },
+        {
+          "country_id": 25,
+          "name": "South Africa",
+          "iso": "ZAF",
+          "height": 0.42,
+          "glow": "B"
+        },
+        {
+          "country_id": 137,
+          "name": "Australia",
+          "iso": "AUS",
+          "height": 0.5,
+          "glow": "A"
+        }
+      ]
+    },
+    "S4": {
+      "mvp": false,
+      "note": "Deferred density stress-test. Boarded S5 used this set. Do not load unless CoS unlocks S4.",
+      "includes_S3": true,
+      "items": [
+        {
+          "country_id": 5,
+          "name": "United States of America",
+          "iso": "USA",
+          "height": 0.72,
+          "glow": "A"
+        },
+        {
+          "country_id": 29,
+          "name": "Brazil",
+          "iso": "BRA",
+          "height": 0.58,
+          "glow": "B"
+        },
+        {
+          "country_id": 121,
+          "name": "Germany",
+          "iso": "DEU",
+          "height": 0.48,
+          "glow": "A"
+        },
+        {
+          "country_id": 98,
+          "name": "India",
+          "iso": "IND",
+          "height": 0.8,
+          "glow": "B"
+        },
+        {
+          "country_id": 155,
+          "name": "Japan",
+          "iso": "JPN",
+          "height": 0.55,
+          "glow": "A"
+        },
+        {
+          "country_id": 25,
+          "name": "South Africa",
+          "iso": "ZAF",
+          "height": 0.42,
+          "glow": "B"
+        },
+        {
+          "country_id": 137,
+          "name": "Australia",
+          "iso": "AUS",
+          "height": 0.5,
+          "glow": "A"
+        },
+        {
+          "country_id": 139,
+          "name": "China",
+          "iso": "CHN",
+          "height": 0.88,
+          "glow": "C"
+        },
+        {
+          "country_id": 56,
+          "name": "Nigeria",
+          "iso": "NGA",
+          "height": 0.62,
+          "glow": "B"
+        },
+        {
+          "country_id": 27,
+          "name": "Mexico",
+          "iso": "MEX",
+          "height": 0.45,
+          "glow": "A"
+        },
+        {
+          "country_id": 43,
+          "name": "France",
+          "iso": "FRA",
+          "height": 0.4,
+          "glow": "A"
+        },
+        {
+          "country_id": 143,
+          "name": "United Kingdom",
+          "iso": "GBR",
+          "height": 0.38,
+          "glow": "A"
+        },
+        {
+          "country_id": 9,
+          "name": "Indonesia",
+          "iso": "IDN",
+          "height": 0.7,
+          "glow": "C"
+        },
+        {
+          "country_id": 163,
+          "name": "Egypt",
+          "iso": "EGY",
+          "height": 0.35,
+          "glow": "B"
+        },
+        {
+          "country_id": 10,
+          "name": "Argentina",
+          "iso": "ARG",
+          "height": 0.44,
+          "glow": "B"
+        },
+        {
+          "country_id": 4,
+          "name": "Canada",
+          "iso": "CAN",
+          "height": 0.36,
+          "glow": "A"
+        },
+        {
+          "country_id": 158,
+          "name": "Saudi Arabia",
+          "iso": "SAU",
+          "height": 0.52,
+          "glow": "C"
+        },
+        {
+          "country_id": 14,
+          "name": "Kenya",
+          "iso": "KEN",
+          "height": 0.33,
+          "glow": "B"
+        },
+        {
+          "country_id": 132,
+          "name": "Spain",
+          "iso": "ESP",
+          "height": 0.34,
+          "glow": "A"
+        },
+        {
+          "country_id": 141,
+          "name": "Italy",
+          "iso": "ITA",
+          "height": 0.37,
+          "glow": "A"
+        },
+        {
+          "country_id": 19,
+          "name": "Russia",
+          "iso": "RUS",
+          "height": 0.6,
+          "glow": "C"
+        },
+        {
+          "country_id": 124,
+          "name": "Turkey",
+          "iso": "TUR",
+          "height": 0.41,
+          "glow": "B"
+        },
+        {
+          "country_id": 32,
+          "name": "Colombia",
+          "iso": "COL",
+          "height": 0.39,
+          "glow": "B"
+        }
+      ]
+    }
+  }
+}
